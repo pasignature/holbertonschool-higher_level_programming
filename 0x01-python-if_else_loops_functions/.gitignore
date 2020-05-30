@@ -1,0 +1,16 @@
+# Ignore files with no extensions
+!*.
+* *
+
+# Emacs automatically created backup files
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Ignore the test directory
+test/
