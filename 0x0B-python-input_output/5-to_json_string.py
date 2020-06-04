@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""
-    Python function that returns the JSON representation of an object
-"""
+from json import dumps
 
-import json
+"""To JSON String"""
 
 
 def to_json_string(my_obj):
-    return json.dumps(my_obj)
+    """Returns the JSON repr of an onject"""
+
+    return dumps(my_obj)

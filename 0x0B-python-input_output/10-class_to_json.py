@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""Function that returns a dictionary description"""
+"""Class To JSON Module"""
 
 
 def class_to_json(obj):
+    """Returns a dict description"""
     return obj.__dict__

@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-'''Python function that reads n lines and print ot stdout'''
+"""Read N Lines Module"""
 
 
 def read_lines(filename="", nb_lines=0):
-    count = 0
-    with open(filename, encoding='utf-8') as f:
+    """Reads n lines from a text file and prints it to stdout"""
+
+    with open(filename, "r", encoding="utf-8") as f:
         for line in f:
-            count += 1
-            print(line, end="")
-            if nb_lines == count:
+            nb_lines -= 1
+            print(line, end='')
+            if not nb_lines:
                 break
