@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-'''Python Function that reads a file and prints to stdout'''
+"""Read File Module"""
 
 
 def read_file(filename=""):
-    with open(filename, encoding='utf-8') as f:
+    """Reads a text file and prints to stdout"""
+
+    with open(filename, "r", encoding='utf-8') as f:
         for line in f:
-            print(line, end="")
+            print(line, end='')
