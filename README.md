@@ -66,10 +66,6 @@ and more
 ## Credits
 Work is owned and maintained by Andrew Godwin [@pasignature](https://twitter.com/pasignature)
 
-<<<<<<< HEAD
 Collaborators are acknowledged within each project.
-=======
-Collaborators are acknowledged within each project
->>>>>>> 74690fda53e13834666652e602055277d1533fe7
 
 <a href="#table-of-contents">Back to table of contents</a>
