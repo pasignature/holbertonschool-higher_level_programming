@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+
 """ module containing unittest cases for Base class """
+
 import unittest
 import sys
 import json
@@ -11,6 +13,7 @@ from models.rectangle import Rectangle
 from models.square import Square
 
 class TestBase(unittest.TestCase):
+
     """ Class with tests cases """
     def setUp(self):
         """ function to redirect stdout """
