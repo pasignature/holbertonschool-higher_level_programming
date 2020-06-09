@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-
 """ module containing unittest cases for Base class """
-
 import unittest
 import sys
 import json
@@ -13,7 +11,6 @@ from models.rectangle import Rectangle
 from models.square import Square
 
 class TestBase(unittest.TestCase):
-
     """ Class with tests cases """
     def setUp(self):
         """ function to redirect stdout """
@@ -63,17 +60,17 @@ class TestBase(unittest.TestCase):
         """
         Test to check for id method
         """
+        b1 = Base()
+        b2 = Base()
+        b3 = Base()
+        b4 = Base(12)
+        b5 = Base()
         Base._Base__nb_objects = 0
         self.assertEqual(b1.id, 1)
         self.assertEqual(b2.id, 2)
         self.assertEqual(b3.id, 3)
         self.assertEqual(b4.id, 12)
         self.assertEqual(b5.id, 4)
-        b1 = Base()
-        b2 = Base()
-        b3 = Base()
-        b4 = Base(12)
-        b5 = Base()
 
     def test_1_id(self):
         """
