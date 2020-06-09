@@ -3,6 +3,7 @@
 
 from models.base import Base
 
+
 class Rectangle(Base):
     ''''Private instance attributes, 
 	each with its own public getter and setter'''
