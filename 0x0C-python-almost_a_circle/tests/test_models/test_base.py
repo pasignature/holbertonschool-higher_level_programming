@@ -10,7 +10,9 @@ from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 
+
 class TestBase(unittest.TestCase):
+
     """ Class with tests cases """
     def setUp(self):
         """ function to redirect stdout """

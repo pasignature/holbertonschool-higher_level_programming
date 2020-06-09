@@ -3,6 +3,7 @@
 
 import json
 
+
 class Base:
     '''Base Class with its private attributes'''
 
