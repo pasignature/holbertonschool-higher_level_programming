@@ -1,20 +1,37 @@
 #!/usr/bin/python3
-"""class Rectangle inherits from Base"""
+"""Class Rectangle inherits from base"""
+
 
 from models.base import Base
 
 
 class Rectangle(Base):
-    ''''Private instance attributes, 
-	each with its own public getter and setter'''
+    ''''rectangle class inherits base'''
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        '''Instantiation of Private instance attributes'''
-        self.height = height
+        '''class constructor Instantiation'''
+        super().__init__(id)
         self.width = width
+        self.height = height
         self.x = x
         self.y = y
-        super().__init__(id)
+
+    def area(self):
+        '''returns the area of class Rectangle'''
+        return self.__width * self.__height
+
+    def display(self):
+        '''print Rectangle to stdout'''
+        print('\n' * self.y, end="")
+        for h in range(self.height):
+            print(' ' * self.x, end="")
+            print('#' * self.width)
+
+    def __str__(self):
+        '''returns string rep of rectangle '''
+        a, d, e = self.id, self.width, self.height
+        b, c = self.x, self.y
+        return("[Rectangle] ({}) {}/{} - {}/{}".format(a, b, c, d, e))
 
     @property
     def width(self):
@@ -42,40 +59,36 @@ class Rectangle(Base):
             raise TypeError('height must be an integer')
         if value <= 0:
             raise ValueError('height must be > 0')
-        self.__height = value
+        else:
+            self.__height = value
 
     def update(self, *args, **kwargs):
-        """Updates Attributes"""
-        atribs = ['id', 'width', 'height', 'x', 'y']
-        if args and 0 < len(args) <= 5:
-            for i, arg in enumerate(args):
-                if i == 0:
-                    super().__init__(arg)
-                else:
-                    self.__setatribs__(atribs[i], arg)
-        elif kwargs and 0 < len(kwargs) <= 5:
-            for c, d in kwargs.items():
-                if c == 'id':
-                    super().__init__(d)
-                elif c in atribs:
-                    self.__setatribs__(c, d)
-
-    def area(self):
-        '''Method returns area of class Rectangle'''
-        return self.__width * self.__height
-
-    def display(self):
-        '''Method for printing  Rectangle to stdout'''
-        print('\n' * self.y, end="")
-        for h in range(self.height):
-            print(' ' * self.x, end="")
-            print('#' * self.width)
-
-    def __str__(self):
-        '''Method returns string rep. of rectangle '''
-        a, d, e = self.id, self.width, self.height
-        b, c = self.x, self.y
-        return("[Rectangle] ({}) {}/{} - {}/{}".format(a, b, c, d, e))
+        '''args for rectangle'''
+        if args:
+            if len(args) == 1:
+                self.id = args[0]
+            if len(args) == 2:
+                self.id = args[0]
+                self.__width = args[1]
+            if len(args) == 3:
+                self.id = args[0]
+                self.__width = args[1]
+                self.__height = args[2]
+            if len(args) == 4:
+                self.id = args[0]
+                self.__width = args[1]
+                self.__height = args[2]
+                self.__x = args[3]
+            if len(args) == 5:
+                self.id = args[0]
+                self.__width = args[1]
+                self.__height = args[2]
+                self.__x = args[3]
+                self.__y = args[4]
+        else:
+            for key, values in kwargs.items():
+                if hasattr(self, key) is True:
+                    setattr(self, key, values)
 
     @property
     def x(self):
@@ -104,10 +117,11 @@ class Rectangle(Base):
             raise TypeError('y must be an integer')
         if value < 0:
             raise ValueError('y must be >= 0')
-        self.__y = value
+        else:
+            self.__y = value
 
     def to_dictionary(self):
-        '''Method returns dictionary rep of rectangle'''
-        to_dict = {'id': self.id, 'width': self.width, 'height': self.height,
+        '''returns dictionary rep of rectangle'''
+        dic = {'id': self.id, 'width': self.width, 'height': self.height,
                'x': self.x, 'y': self.y}
-        return to_dict
+        return dic
