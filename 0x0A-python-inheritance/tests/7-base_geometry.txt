@@ -1,0 +1,40 @@
+>>> bg = __import__('7-base_geometry').BaseGeometry
+
+>>> a = bg()
+
+>>> a.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
+
+>>> a.integer_validator("leo", 1)
+
+>>> a.integer_validator("leo", 0)
+Traceback (most recent call last):
+...
+ValueError: leo must be greater than 0
+
+>>> a.integer_validator("Leo", "a")
+Traceback (most recent call last):
+...
+TypeError: Leo must be an integer
+
+>>> a.integer_validator("Leo", None)
+Traceback (most recent call last):
+...
+TypeError: Leo must be an integer
+
+>>> a.integer_validator("Leo", [1])
+Traceback (most recent call last):
+...
+TypeError: Leo must be an integer
+
+>>> a.integer_validator("Leo", 1.1)
+Traceback (most recent call last):
+...
+TypeError: Leo must be an integer
+
+>>> a.integer_validator("leo", -10)
+Traceback (most recent call last):
+...
+ValueError: leo must be greater than 0
