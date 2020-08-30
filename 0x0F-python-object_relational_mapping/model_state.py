@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-'''Contains the class def of States and an instance Base = declarative_base()'''
+'''Contains class def of States and instance Base = declarative_base()'''
 
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
 
 Base = declarative_base()
+
 
 class State(Base):
     '''Class def for State'''
