@@ -1,12 +1,11 @@
 #!/usr/bin/python3
-'''List all State objects from the db hbtn_0e_6_usa'''
+'''List all State objects from db hbtn_0e_6_usa'''
 
-
-if __name__ == "__main__":
 import sys
 from model_state import Base, State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+if __name__ == "__main__":
 
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.
                            format(sys.argv[1],
