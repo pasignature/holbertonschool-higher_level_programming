@@ -9,5 +9,5 @@ if __name__ == "__main__":
     data = urlp.urlencode(value)
     data = data.encode('ascii')
     req = url.Request(argv[1], data)
-    with url.urllopen(req) as response:
+    with url.urlopen(req) as response:
         print(str(response.read(), 'utf-8'))
