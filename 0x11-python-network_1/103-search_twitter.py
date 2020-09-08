@@ -47,4 +47,3 @@ if __name__ == "__main__":
     for x in tweet_data['statuses']:
         print("[{}] {} by {}".format(x.get('id'), x.get('text'),
                                      x.get('user').get('name')))
-
