@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Python script that fetches id from api.github.com/users
+'''fetches id from api.github.com/users'''
 from sys import argv
 import requests
 from requests.auth import HTTPBasicAuth
