@@ -1,20 +1,22 @@
 #!/usr/bin/python3
-# Python script that fetches a url and post email using only requests
+'''fetches a url and post email using only requests'''
+import requests
+from sys import argv
+
 if __name__ == "__main__":
-    import requests as req
-    from sys import argv
+
+    if len(argv) == 1:
+        let = ""
+    else:
+        let = argv[1]
+    payload = {"q": let}
+
+    r = requests.post("http://0.0.0.0:5000/search_user", data=payload)
     try:
-        letter = argv[1]
-    except BaseException:
-        letter = ""
-    try:
-        r = req.post('http://0.0.0.0:5000/search_user', data={'q': letter})
-        r = r.json()
-        r_id = r.get('id')
-        r_name = r.get('name')
-        if r_id is None or r_name is None:
-            print('No result')
+        response = r.json()
+        if response == {}:
+            print("No result")
         else:
-            print('[{}] {}'.format(r_id, r_name))
-    except BaseException:
-        print('Not a valid JSON')
+            print("[{}] {}".format(response.get("id"), response.get("name")))
+    except ValueError:
+        print("Not a valid JSON")
