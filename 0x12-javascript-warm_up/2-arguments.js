@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// prints a message depending on number of arguments passed
+// prints a message depending on number of arguments
 'use strict';
 let len = process.argv.length;
 if (len < 3) {
