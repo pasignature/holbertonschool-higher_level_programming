@@ -1,8 +1,8 @@
 #!/usr/bin/node
-// finds the second largest number
+//finds the second largest number
 'use strict';
 (function secondBiggest (arg) {
-  const list = [];
+  let list = [];
   if (process.argv.length < 4) {
     console.log(0);
   } else {
