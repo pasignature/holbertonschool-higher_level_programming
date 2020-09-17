@@ -1,7 +1,7 @@
 #!/usr/bin/node
-//computes the factorial of a number
+// computes the factorial of a number
 'use strict';
-let a = Number(process.argv[2]);
+const a = Number(process.argv[2]);
 function factorialize (a) {
   if (isNaN(a) || a === 1) {
     return (1);
