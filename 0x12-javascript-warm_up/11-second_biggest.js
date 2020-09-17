@@ -1,5 +1,5 @@
 #!/usr/bin/node
-//finds the second largest number
+// finds the second largest number
 'use strict';
 let secondMax = 0;
 
