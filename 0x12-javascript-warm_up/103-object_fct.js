@@ -1,6 +1,6 @@
 #!/usr/bin/node
 // increments the integer value
-let myObject = {
+const myObject = {
   type: 'object',
   value: 12
 };
