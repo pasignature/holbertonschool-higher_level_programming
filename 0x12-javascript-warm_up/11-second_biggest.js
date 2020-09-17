@@ -1,14 +1,11 @@
 #!/usr/bin/node
 //finds the second largest number
 'use strict';
-(function secondBiggest (arg) {
-  const list = [];
-  if (process.argv.length < 4) {
-    console.log(0);
-  } else {
-    for (let count = 2; count < process.argv.length; count++) {
-      list.push(Number(process.argv[count]));
-    }
-    console.log(list.sort()[list.length - 2]);
-  }
-})();
+const arr = process.argv.slice(2);
+if (arr.length > 1) {
+  arr.sort();
+  
+// assign secondMax with the second biggest number in the sorted array
+let secondMax = arr[arr.length - 2];
+}
+console.log(secondMax);
