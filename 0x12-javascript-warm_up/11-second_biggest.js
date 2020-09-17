@@ -2,7 +2,7 @@
 //finds the second largest number
 'use strict';
 (function secondBiggest (arg) {
-  let list = [];
+  const list = [];
   if (process.argv.length < 4) {
     console.log(0);
   } else {
