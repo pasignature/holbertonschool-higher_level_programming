@@ -1,6 +1,6 @@
 # 0x13. Javascript - Objects, Scopes and Closures
 
-## Foundations - Higher-level programming ― Javascript
+## Foundations - Higher-level programming ― Javascript (Node JS)
 ---
 ![alt closure](https://dmitryfrank.com/_media/articles/js_closure_8_this_3.png)
 ---
