@@ -1,7 +1,7 @@
 #!/usr/bin/node
-const requestMod = require('request');
-const requestUri = 'http://swapi.co/api/films/';
-const id = process.argv[2];
+let requestMod = require('request');
+let requestUri = 'http://swapi.co/api/films/';
+let id = process.argv[2];
 
 requestMod(requestUri + id, function (error, response, body) {
   if (error) {
