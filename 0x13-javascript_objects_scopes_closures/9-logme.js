@@ -3,8 +3,9 @@
 'use strict';
 
 // prints the number of arguments already printed
-const counter = 0;
+let narg = 0;
+
 exports.logMe = function (item) {
-  console.log(counter + ': ' + item);
-  counter++;
+  console.log(narg + ': ' + item);
+  narg++;
 };
