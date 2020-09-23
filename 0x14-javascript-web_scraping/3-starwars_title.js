@@ -1,5 +1,4 @@
 #!/usr/bin/node
-
 'use strict';
 
 const request = require('request');
