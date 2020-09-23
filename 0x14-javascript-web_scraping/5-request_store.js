@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-'use strict'
+'use strict';
 
 const requestMod = require('request');
 const requestUrl = process.argv[2];
