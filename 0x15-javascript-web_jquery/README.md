@@ -4,6 +4,10 @@
 
 ![alt jQuery](https://steemitimages.com/DQmTnDPFNsTRKKKrx1uWDqEpPkvvxff4o4Rku5CeKYAyaej/html-css-javascript-and-jquery.png)
 
+---
+
+![alt jQuery](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/305/1f1ihd.jpg)
+
 Resources
 
 Read or watch:
