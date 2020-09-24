@@ -1,118 +1,62 @@
-## 0x15. Javascript - Web JQuery
+# 0x15. Javascript - Web JQuery
 
-![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/305/4724718.jpg)
+## Foundations - Higher-level programming ― Javascript
 
-**What you should learn from this project**
+![alt jQuery](https://steemitimages.com/DQmTnDPFNsTRKKKrx1uWDqEpPkvvxff4o4Rku5CeKYAyaej/html-css-javascript-and-jquery.png)
 
-       At the end of this project you are expected to be able to explain to
-       anyone, without the help of Google:
+Resources
 
-* Why jQuery make front-end programming so easy (don’t forget to tweet today,
-  with the hashtag #ilovejquery :))
-* How to select HTML elements in Javascript
-* How to select HTML elements with jQuery
-* What are differences between ID, class and tag name selectors
-* How to modify an HTML element style
-* How to get and update an HTML element content
-* How to modify the DOM
-* How to make a GET request with jQuery Ajax
-* How to make a POST request with jQuery Ajax
-* How to listen/bind to DOM events
-* How to listen/bind to user events
+Read or watch:
 
-**Import jQuery**
+    What is JavaScript?
+    Selector
+    Get and set content
+    Manipulate CSS classes
+    Manipulate DOM elements
+    API
+    Introduction
+    GET & POST request
+    jQuery Ajax Tutorial #1 - Using AJAX & API’s
+    What went wrong? Troubleshooting JavaScript
+    jQuery
+    jQuery API
+    jQuery Ajax
 
-	 <head>
-	     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    	 </head>
+Learning Objectives
 
-![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/305/1f1ihd.jpg)
+At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+General
 
-**0. No jQuery**
+    Why jQuery make front-end programming so easy (don’t forget to tweet today, with the hashtag #ilovejquery :))
+    How to select HTML elements in Javascript
+    How to select HTML elements with jQuery
+    What are differences between ID, class and tag name selectors
+    How to modify an HTML element style
+    How to get and update an HTML element content
+    How to modify the DOM
+    How to make a GET request with jQuery Ajax
+    How to make a POST request with jQuery Ajax
+    How to listen/bind to DOM events
+    How to listen/bind to user events
 
-     Write a Javascript script that updates the text color of the HTML tag
-     HEADER to red (#FF0000):
+Requirements
+General
 
-* You must use `document.querySelector` to select the HTML tag
-* You can’t use the jQuery API
+    Allowed editors: vi, vim, emacs
+    All your files will be interpreted on Chrome (version 57.0)
+    All your files should end with a new line
+    A README.md file, at the root of the folder of the project, is mandatory
+    Your code should be semistandard compliant with the flag --global $: semistandard *.js --global $
+    You must use jQuery version 3.x
+    You are not allowed to use var
+    HTML should not reload for each action: DOM manipulation, update values, fetch data…
 
-**1. With jQuery**
+More Info
+Import jQuery
 
-     Write a Javascript script that updates the text color of the HTML tag
-     HEADER to red (#FF0000):
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
 
-* You can’t use `document.querySelector` to select the HTML tag
-* You must use the jQuery API
-
-**2. Click and turn red**
-
-     Write a Javascript script that updates the text color of the HTML tag
-     HEADER to red (#FF0000) when the user clicks on the tag DIV#red_header:
-
-* You can’t use `document.querySelector` to select the HTML tag
-* You must use the jQuery API
-
-**3. Add `.red` class**
-
-     Write a Javascript script that adds the class red to the HTML tag
-     HEADER to red (#FF0000) when the user clicks on the tag DIV#red_header:
-
-* You can’t use `document.querySelector` to select the HTML tag
-* You must use the jQuery API
-
-**4. Toggle classes**
-
-     Write a Javascript script that toggles the class of the HTML tag
-     HEADER to red (#FF0000) when the user clicks on the tag DIV#toggle_header:
-
-* The HEADER tag must always have one class: red or green, never both in the
-  same time, never empty.
-* If the current class is red, when the user click on `DIV#toggle_header`, the
-  class must be updated to green ; and the reverse.
-* You can’t use `document.querySelector` to select the HTML tag
-* You must use the jQuery API
-
-**5. List of elements**
-
-     Write a Javascript script that adds a LI element to a list when the user
-     clicks on the tag DIV#add_item:
-
-* The new element must be: `<li>Item</li>`
-* The new element must be added to `UL.my_list`
-* You can’t use `document.querySelector` to select the HTML tag
-* You must use the jQuery API
-
-**6. Change the text**
-
-     Write a Javascript script that updates the text of the HTML tag
-     HEADER to “New Header!!!” when the user clicks on DIV#update_header
-
-* You can’t use `document.querySelector` to select the HTML tag
-* You must use the jQuery API
-
-**7. Star wars character**
-
-     Write a Javascript script that fetches and replaces the name of this
-     URL: https://swapi.co/api/people/5/?format=json
-
-* The name must be displayed in the HTML tag `DIV#character`
-* You can’t use `document.querySelector` to select the HTML tag
-* You must use the jQuery API
-
-**8. Star Wars movies**
-
-     Write a Javascript script that fetches and lists all movies title by using
-     this URL: https://swapi.co/api/films/?format=json
-
-* All movie titles must be list in the HTML tag `UL#list_movies`
-* You can’t use `document.querySelector` to select the HTML tag
-* You must use the jQuery API
-
-**9. Wind speed**
-
-     Write a Javascript script that fetches and prints the San Francisco wind
-     speed by using this URL: https://query.yahooapis.com/v1/public/yql?q=select%20wind%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22San%20Francisco%2C%20CA%22)&format=json
-
-* The wind speed must be display in the HTML tag `DIV#sf_wind_speed`
-* You can’t use `document.querySelector` to select the HTML tag
-* You must use the jQuery API You script must be work when it imported from the HEAD tag
+---
+Andrew Godwin
